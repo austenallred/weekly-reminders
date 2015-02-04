@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F99C63B81A7DA7DE005C56E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C63B71A7DA7DE005C56E6 /* AppDelegate.swift */; };
-		F99C63BA1A7DA7DE005C56E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C63B91A7DA7DE005C56E6 /* ViewController.swift */; };
+		F99C63BA1A7DA7DE005C56E6 /* RoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C63B91A7DA7DE005C56E6 /* RoleViewController.swift */; };
 		F99C63BD1A7DA7DE005C56E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99C63BB1A7DA7DE005C56E6 /* Main.storyboard */; };
 		F99C63BF1A7DA7DE005C56E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99C63BE1A7DA7DE005C56E6 /* Images.xcassets */; };
 		F99C63C21A7DA7DE005C56E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99C63C01A7DA7DE005C56E6 /* LaunchScreen.xib */; };
 		F99C63CE1A7DA7DE005C56E6 /* Weekly_RemindersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C63CD1A7DA7DE005C56E6 /* Weekly_RemindersTests.swift */; };
+		F99C63D81A7F555D005C56E6 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C63D71A7F555D005C56E6 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		F99C63B21A7DA7DE005C56E6 /* Weekly Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weekly Reminders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99C63B61A7DA7DE005C56E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99C63B71A7DA7DE005C56E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F99C63B91A7DA7DE005C56E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F99C63B91A7DA7DE005C56E6 /* RoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleViewController.swift; sourceTree = "<group>"; };
 		F99C63BC1A7DA7DE005C56E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99C63BE1A7DA7DE005C56E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F99C63C11A7DA7DE005C56E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F99C63C71A7DA7DE005C56E6 /* Weekly RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weekly RemindersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99C63CC1A7DA7DE005C56E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99C63CD1A7DA7DE005C56E6 /* Weekly_RemindersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekly_RemindersTests.swift; sourceTree = "<group>"; };
+		F99C63D71A7F555D005C56E6 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				F99C63B71A7DA7DE005C56E6 /* AppDelegate.swift */,
-				F99C63B91A7DA7DE005C56E6 /* ViewController.swift */,
+				F99C63B91A7DA7DE005C56E6 /* RoleViewController.swift */,
 				F99C63BB1A7DA7DE005C56E6 /* Main.storyboard */,
-				F99C63BE1A7DA7DE005C56E6 /* Images.xcassets */,
-				F99C63C01A7DA7DE005C56E6 /* LaunchScreen.xib */,
+				F99C63D71A7F555D005C56E6 /* TaskViewController.swift */,
 				F99C63B51A7DA7DE005C56E6 /* Supporting Files */,
 			);
 			path = "Weekly Reminders";
@@ -90,6 +91,8 @@
 		F99C63B51A7DA7DE005C56E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F99C63BE1A7DA7DE005C56E6 /* Images.xcassets */,
+				F99C63C01A7DA7DE005C56E6 /* LaunchScreen.xib */,
 				F99C63B61A7DA7DE005C56E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99C63BA1A7DA7DE005C56E6 /* ViewController.swift in Sources */,
+				F99C63BA1A7DA7DE005C56E6 /* RoleViewController.swift in Sources */,
 				F99C63B81A7DA7DE005C56E6 /* AppDelegate.swift in Sources */,
+				F99C63D81A7F555D005C56E6 /* TaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
