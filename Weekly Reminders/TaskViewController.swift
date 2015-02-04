@@ -9,6 +9,10 @@
 import UIKit
 
 class TaskViewController: UIViewController {
+    var taskOne = ""
+    var taskTwo = ""
+    var taskThree = ""
+    var taskFour = ""
     
     @IBOutlet var taskOneLabel: UILabel!
     @IBOutlet var taskTwoLabel: UILabel!
@@ -21,7 +25,10 @@ class TaskViewController: UIViewController {
     @IBOutlet var taskFourField: UITextField!
     
     override func viewDidLoad() {
-    taskOneLabel.text = "This is the label I want to change to whatever was input as or whatever"
+    taskOneLabel.text = "What can you do to be a better \(taskOne) this week?"
+    taskTwoLabel.text = "What can you do to be a better \(taskTwo) this week?"
+    taskThreeLabel.text = "What can you do to be a better \(taskThree) this week?"
+    taskFourLabel.text = "What can you do to be a better \(taskFour) this week?"
     }
     
     

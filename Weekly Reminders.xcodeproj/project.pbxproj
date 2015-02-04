@@ -81,8 +81,8 @@
 			children = (
 				F99C63B71A7DA7DE005C56E6 /* AppDelegate.swift */,
 				F99C63B91A7DA7DE005C56E6 /* RoleViewController.swift */,
-				F99C63BB1A7DA7DE005C56E6 /* Main.storyboard */,
 				F99C63D71A7F555D005C56E6 /* TaskViewController.swift */,
+				F99C63BB1A7DA7DE005C56E6 /* Main.storyboard */,
 				F99C63B51A7DA7DE005C56E6 /* Supporting Files */,
 			);
 			path = "Weekly Reminders";
@@ -409,6 +409,7 @@
 				F99C63D31A7DA7DE005C56E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F99C63D41A7DA7DE005C56E6 /* Build configuration list for PBXNativeTarget "Weekly RemindersTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				F99C63D61A7DA7DE005C56E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
