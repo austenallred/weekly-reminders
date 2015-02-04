@@ -30,6 +30,4 @@ class TaskViewController: UIViewController {
     taskThreeLabel.text = "What can you do to be a better \(taskThree) this week?"
     taskFourLabel.text = "What can you do to be a better \(taskFour) this week?"
     }
-    
-    
 }
