@@ -231,7 +231,7 @@
         <!--ReminderController-->
         <scene sceneID="nhF-Pb-Jpi">
             <objects>
-                <viewController title="ReminderController" id="weJ-gq-vku" sceneMemberID="viewController">
+                <viewController title="ReminderController" id="weJ-gq-vku" customClass="ReminderViewController" customModule="Weekly_Reminders" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S5X-c0-CtB"/>
                         <viewControllerLayoutGuide type="bottom" id="Qaz-DS-ap2"/>
@@ -255,6 +255,9 @@
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="top" secondItem="S5X-c0-CtB" secondAttribute="bottom" constant="8" id="tfA-KL-vYK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goalRemindLabel" destination="rK2-mX-ocU" id="2iA-YC-vHX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyA-px-jm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
