@@ -131,7 +131,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role1) this week?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7F-cq-lvA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can you do to be a better \(role1) this week?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7F-cq-lvA">
                                 <rect key="frame" x="16" y="72" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -142,7 +142,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role2) this week?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-aO-WLa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role2) this week?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-aO-WLa">
                                 <rect key="frame" x="16" y="139" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -153,7 +153,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role3) this week?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kij-HG-yHJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role3) this week?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kij-HG-yHJ">
                                 <rect key="frame" x="16" y="206" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -164,7 +164,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role4) this week?" lineBreakMode="wordWrap" numberOfLines="0" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-2P-0CK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What can you do to be a better \(role4) this week?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-2P-0CK">
                                 <rect key="frame" x="16" y="273" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -188,28 +188,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="i76-Cg-5aB" firstAttribute="top" secondItem="Ygc-2P-0CK" secondAttribute="bottom" constant="8" id="26x-nB-DQE"/>
-                            <constraint firstItem="Ygc-2P-0CK" firstAttribute="top" secondItem="Qyb-6f-Vym" secondAttribute="bottom" constant="8" id="2D4-7e-ldK"/>
-                            <constraint firstItem="mFP-w2-XcE" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="3jo-3W-ECy"/>
-                            <constraint firstItem="i76-Cg-5aB" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="3xG-0s-GYu"/>
-                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="83G-N2-5OU"/>
-                            <constraint firstItem="kij-HG-yHJ" firstAttribute="top" secondItem="mFP-w2-XcE" secondAttribute="bottom" constant="8" id="8YW-sv-eEf"/>
-                            <constraint firstItem="i76-Cg-5aB" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="Bk7-S3-x9O"/>
-                            <constraint firstItem="hGh-aO-WLa" firstAttribute="top" secondItem="Yo0-Cr-wv9" secondAttribute="bottom" constant="8" id="MrA-Zr-DYQ"/>
-                            <constraint firstAttribute="centerX" secondItem="i76-Cg-5aB" secondAttribute="centerX" id="QAj-My-l3F"/>
-                            <constraint firstAttribute="centerX" secondItem="Z1F-hO-xGL" secondAttribute="centerX" id="RLc-D5-aWY"/>
-                            <constraint firstItem="t7F-cq-lvA" firstAttribute="top" secondItem="kYC-No-7st" secondAttribute="bottom" constant="8" id="Roo-xi-Mfs"/>
-                            <constraint firstAttribute="centerX" secondItem="Qyb-6f-Vym" secondAttribute="centerX" id="TJB-PY-SVg"/>
-                            <constraint firstItem="mFP-w2-XcE" firstAttribute="top" secondItem="hGh-aO-WLa" secondAttribute="bottom" constant="8" id="fDc-VT-FOf"/>
-                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="gQZ-5w-iwe"/>
-                            <constraint firstItem="Z1F-hO-xGL" firstAttribute="top" secondItem="i76-Cg-5aB" secondAttribute="bottom" constant="8" id="j8g-9T-VOK"/>
-                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="top" secondItem="kij-HG-yHJ" secondAttribute="bottom" constant="8" id="jpp-WC-aSk"/>
-                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="lGu-GT-spz"/>
-                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="nup-lf-reZ"/>
-                            <constraint firstAttribute="centerX" secondItem="mFP-w2-XcE" secondAttribute="centerX" id="pEH-nd-7OG"/>
-                            <constraint firstItem="mFP-w2-XcE" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="u4v-I2-4N2"/>
-                            <constraint firstAttribute="centerX" secondItem="Yo0-Cr-wv9" secondAttribute="centerX" id="w16-Y7-wnh"/>
-                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="top" secondItem="t7F-cq-lvA" secondAttribute="bottom" constant="8" id="wTM-fP-IeV"/>
+                            <constraint firstItem="Ygc-2P-0CK" firstAttribute="top" secondItem="Qyb-6f-Vym" secondAttribute="bottom" constant="8" id="3Ac-8n-Ou3"/>
+                            <constraint firstItem="Z1F-hO-xGL" firstAttribute="top" secondItem="i76-Cg-5aB" secondAttribute="bottom" constant="8" id="4jB-Ss-pMn"/>
+                            <constraint firstItem="mFP-w2-XcE" firstAttribute="top" secondItem="hGh-aO-WLa" secondAttribute="bottom" constant="8" id="749-P0-owB"/>
+                            <constraint firstItem="t7F-cq-lvA" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="93p-hH-hm6"/>
+                            <constraint firstItem="i76-Cg-5aB" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="9UM-z3-szG"/>
+                            <constraint firstItem="mFP-w2-XcE" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="Fyl-2g-JpK"/>
+                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="top" secondItem="t7F-cq-lvA" secondAttribute="bottom" constant="8" id="HL7-FO-Rmj"/>
+                            <constraint firstItem="kij-HG-yHJ" firstAttribute="top" secondItem="mFP-w2-XcE" secondAttribute="bottom" constant="8" id="LWa-bm-6pD"/>
+                            <constraint firstItem="t7F-cq-lvA" firstAttribute="top" secondItem="kYC-No-7st" secondAttribute="bottom" constant="8" id="N8b-GO-ND8"/>
+                            <constraint firstItem="t7F-cq-lvA" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="YM1-Vh-5gw"/>
+                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="Ys3-X4-jV0"/>
+                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="dkH-3v-N8w"/>
+                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="eYX-bR-o25"/>
+                            <constraint firstItem="i76-Cg-5aB" firstAttribute="top" secondItem="Ygc-2P-0CK" secondAttribute="bottom" constant="8" id="l5a-rW-4ye"/>
+                            <constraint firstItem="Yo0-Cr-wv9" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="pyb-I6-GMb"/>
+                            <constraint firstAttribute="centerX" secondItem="Z1F-hO-xGL" secondAttribute="centerX" id="r0M-u6-xhJ"/>
+                            <constraint firstItem="i76-Cg-5aB" firstAttribute="trailing" secondItem="3An-OX-DfW" secondAttribute="trailingMargin" id="rtD-kP-IUs"/>
+                            <constraint firstItem="mFP-w2-XcE" firstAttribute="leading" secondItem="3An-OX-DfW" secondAttribute="leadingMargin" id="t1u-zo-njp"/>
+                            <constraint firstItem="Qyb-6f-Vym" firstAttribute="top" secondItem="kij-HG-yHJ" secondAttribute="bottom" constant="8" id="vTh-q6-V8o"/>
+                            <constraint firstItem="hGh-aO-WLa" firstAttribute="top" secondItem="Yo0-Cr-wv9" secondAttribute="bottom" constant="8" id="yUS-GM-Ijy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Goals" id="xpz-Iv-Pqf"/>
@@ -228,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="2034" y="315"/>
         </scene>
-        <!--ReminderController-->
+        <!--Reminder-->
         <scene sceneID="nhF-Pb-Jpi">
             <objects>
-                <viewController title="ReminderController" id="weJ-gq-vku" customClass="ReminderViewController" customModule="Weekly_Reminders" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reminder" id="weJ-gq-vku" customClass="ReminderViewController" customModule="Weekly_Reminders" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S5X-c0-CtB"/>
                         <viewControllerLayoutGuide type="bottom" id="Qaz-DS-ap2"/>
@@ -261,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyA-px-jm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="315"/>
+            <point key="canvasLocation" x="2722" y="315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2OZ-f7-8lH">
