@@ -9,10 +9,6 @@
 import UIKit
 
 class TaskViewController: UIViewController {
-    var taskOne = ""
-    var taskTwo = ""
-    var taskThree = ""
-    var taskFour = ""
     
     @IBOutlet var taskOneLabel: UILabel!
     @IBOutlet var taskTwoLabel: UILabel!
@@ -25,6 +21,11 @@ class TaskViewController: UIViewController {
     @IBOutlet var taskFourField: UITextField!
     
     override func viewDidLoad() {
+    var taskOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.lowercaseString
+    var taskTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.lowercaseString
+    var taskThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.lowercaseString
+    var taskFour = NSUserDefaults.standardUserDefaults().objectForKey("roleFour")!.lowercaseString
+    
     taskOneLabel.text = "What can you do to be a better \(taskOne) this week?"
     taskTwoLabel.text = "What can you do to be a better \(taskTwo) this week?"
     taskThreeLabel.text = "What can you do to be a better \(taskThree) this week?"
