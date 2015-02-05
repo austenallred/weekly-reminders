@@ -19,18 +19,17 @@ class ReminderViewController: UIViewController {
     var goalThree = "c"
     var goalFour = "d"
     
-   
-    
     @IBOutlet var labelOne: UILabel!
     @IBOutlet var labelTwo: UILabel!
     @IBOutlet var labelThree: UILabel!
     @IBOutlet var labelFour: UILabel!
     
     override func viewDidLoad() {
-        labelOne.text = "\(roleOne): The goal"
-        labelTwo.text = "\(roleTwo): The goal"
-        labelThree.text = "\(roleThree): The goal"
-        labelFour.text = "\(roleFour): The goal"
+        NSUserDefaults.standardUserDefaults().synchronize()
+        labelOne.text = "\(roleOne): \(goalOne.capitalizedString)"
+        labelTwo.text = "\(roleTwo): \(goalTwo.capitalizedString)"
+        labelThree.text = "\(roleThree): \(goalThree.capitalizedString)"
+        labelFour.text = "\(roleFour): \(goalFour.capitalizedString)"
     }
     
 }

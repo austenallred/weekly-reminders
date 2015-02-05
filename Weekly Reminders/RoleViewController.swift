@@ -14,6 +14,7 @@ class RoleViewController: UIViewController {
     @IBOutlet var roleTwoField: UITextField!
     @IBOutlet var roleThreeField: UITextField!
     @IBOutlet var roleFourField: UITextField!
+    
     @IBAction func submitRolesButton() {
         NSUserDefaults.standardUserDefaults().setObject(roleOneField.text, forKey: "roleOne")
         NSUserDefaults.standardUserDefaults().setObject(roleTwoField.text, forKey: "roleTwo")
@@ -22,14 +23,5 @@ class RoleViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if (segue.identifier == "roleSegue") {
-//            var svc = segue.destinationViewController as TaskViewController;
-//            svc.taskOne = roleOneField.text.lowercaseString
-//            svc.taskTwo = roleTwoField.text.lowercaseString
-//            svc.taskThree = roleThreeField.text.lowercaseString
-//            svc.taskFour = roleFourField.text.lowercaseString
-//        }
-//    }
 }
 

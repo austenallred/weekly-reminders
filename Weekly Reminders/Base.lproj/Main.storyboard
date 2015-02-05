@@ -198,7 +198,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="weJ-gq-vku" kind="show" id="Flh-1P-oj3"/>
+                                    <action selector="submitButton" destination="65i-mc-qLv" eventType="touchUpInside" id="uEP-L2-t8g"/>
+                                    <segue destination="weJ-gq-vku" kind="show" identifier="goalSegue" id="Flh-1P-oj3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -263,7 +264,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your goals for this week" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK2-mX-ocU">
                                 <rect key="frame" x="16" y="72" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -291,12 +292,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-JC-OjP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM2-yn-MUm">
+                                <rect key="frame" x="16" y="217" width="5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kvs-pL-l60" firstAttribute="top" secondItem="guc-Ng-WvE" secondAttribute="bottom" constant="8" id="2HX-nL-rCp"/>
                             <constraint firstItem="1Dm-rP-cPd" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="Ify-O9-BdF"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="PeH-tZ-Jbd"/>
+                            <constraint firstItem="KM2-yn-MUm" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="Uh8-vs-Rud"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="big-im-9v8"/>
                             <constraint firstItem="M8O-rl-o5Z" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="dOb-wz-oCK"/>
                             <constraint firstItem="M8O-rl-o5Z" firstAttribute="top" secondItem="kvs-pL-l60" secondAttribute="bottom" constant="8" id="eGW-zm-QZ5"/>
@@ -310,6 +323,7 @@
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="top" secondItem="S5X-c0-CtB" secondAttribute="bottom" constant="8" id="tfA-KL-vYK"/>
                             <constraint firstItem="guc-Ng-WvE" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uUD-RE-LLK"/>
                             <constraint firstItem="1Dm-rP-cPd" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uk2-oj-Uyf"/>
+                            <constraint firstItem="KM2-yn-MUm" firstAttribute="top" secondItem="M8O-rl-o5Z" secondAttribute="bottom" constant="8" id="xob-IW-vxU"/>
                         </constraints>
                     </view>
                     <connections>

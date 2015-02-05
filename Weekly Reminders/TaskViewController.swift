@@ -20,17 +20,29 @@ class TaskViewController: UIViewController {
     @IBOutlet var taskThreeField: UITextField!
     @IBOutlet var taskFourField: UITextField!
     
+    override func viewDidLoad() {
     var roleOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.lowercaseString
     var roleTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.lowercaseString
     var roleThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.lowercaseString
     var roleFour = NSUserDefaults.standardUserDefaults().objectForKey("roleFour")!.lowercaseString
-    
-    override func viewDidLoad() {
+        
+    NSUserDefaults.standardUserDefaults().synchronize()
     taskOneLabel.text = "What can you do to be a better \(roleOne) this week?"
     taskTwoLabel.text = "What can you do to be a better \(roleTwo) this week?"
     taskThreeLabel.text = "What can you do to be a better \(roleThree) this week?"
     taskFourLabel.text = "What can you do to be a better \(roleFour) this week?"
-        
-        
+    }
+    
+    @IBAction func submitButton() {
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "goalSegue") {
+            var svc = segue.destinationViewController as ReminderViewController;
+            svc.goalOne = taskOneField.text.lowercaseString
+            svc.goalTwo = taskTwoField.text.lowercaseString
+            svc.goalThree = taskThreeField.text.lowercaseString
+            svc.goalFour = taskFourField.text.lowercaseString
+        }
     }
 }
