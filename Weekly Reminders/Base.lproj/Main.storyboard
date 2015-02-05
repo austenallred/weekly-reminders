@@ -292,24 +292,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-JC-OjP">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM2-yn-MUm">
-                                <rect key="frame" x="16" y="217" width="5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M40-2O-Z3g">
+                                <rect key="frame" x="233" y="562" width="135" height="30"/>
+                                <state key="normal" title="Schedule Reminder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scheduleReminder" destination="weJ-gq-vku" eventType="touchUpInside" id="GuL-Oh-djJ"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k5h-ge-ZaW">
+                                <rect key="frame" x="0.0" y="392" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="444839361.11217201">
+                                    <!--2015-02-05 14:29:21 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="setDatePicker:" destination="weJ-gq-vku" eventType="valueChanged" id="IIZ-9G-fDN"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kvs-pL-l60" firstAttribute="top" secondItem="guc-Ng-WvE" secondAttribute="bottom" constant="8" id="2HX-nL-rCp"/>
                             <constraint firstItem="1Dm-rP-cPd" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="Ify-O9-BdF"/>
+                            <constraint firstAttribute="centerX" secondItem="M40-2O-Z3g" secondAttribute="centerX" id="Iq6-3G-fJa"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="PeH-tZ-Jbd"/>
-                            <constraint firstItem="KM2-yn-MUm" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="Uh8-vs-Rud"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="big-im-9v8"/>
                             <constraint firstItem="M8O-rl-o5Z" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="dOb-wz-oCK"/>
                             <constraint firstItem="M8O-rl-o5Z" firstAttribute="top" secondItem="kvs-pL-l60" secondAttribute="bottom" constant="8" id="eGW-zm-QZ5"/>
@@ -323,10 +330,13 @@
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="top" secondItem="S5X-c0-CtB" secondAttribute="bottom" constant="8" id="tfA-KL-vYK"/>
                             <constraint firstItem="guc-Ng-WvE" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uUD-RE-LLK"/>
                             <constraint firstItem="1Dm-rP-cPd" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uk2-oj-Uyf"/>
-                            <constraint firstItem="KM2-yn-MUm" firstAttribute="top" secondItem="M8O-rl-o5Z" secondAttribute="bottom" constant="8" id="xob-IW-vxU"/>
+                            <constraint firstItem="M40-2O-Z3g" firstAttribute="top" secondItem="k5h-ge-ZaW" secondAttribute="bottom" constant="8" id="wm4-H4-lwm"/>
+                            <constraint firstItem="Qaz-DS-ap2" firstAttribute="top" secondItem="M40-2O-Z3g" secondAttribute="bottom" constant="8" id="zdn-ad-5Zn"/>
+                            <constraint firstAttribute="centerX" secondItem="k5h-ge-ZaW" secondAttribute="centerX" id="zr0-0Z-4Bp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="k5h-ge-ZaW" id="yE8-p5-hmf"/>
                         <outlet property="labelFour" destination="M8O-rl-o5Z" id="Sxf-uP-EI4"/>
                         <outlet property="labelOne" destination="1Dm-rP-cPd" id="Ny3-Sa-0x0"/>
                         <outlet property="labelThree" destination="kvs-pL-l60" id="ZYd-bR-QGh"/>

@@ -23,6 +23,9 @@ class ReminderViewController: UIViewController {
     @IBOutlet var labelTwo: UILabel!
     @IBOutlet var labelThree: UILabel!
     @IBOutlet var labelFour: UILabel!
+    @IBOutlet var datePicker: UIDatePicker!
+    @IBAction func setDatePicker(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         NSUserDefaults.standardUserDefaults().synchronize()
@@ -30,6 +33,10 @@ class ReminderViewController: UIViewController {
         labelTwo.text = "\(roleTwo): \(goalTwo.capitalizedString)"
         labelThree.text = "\(roleThree): \(goalThree.capitalizedString)"
         labelFour.text = "\(roleFour): \(goalFour.capitalizedString)"
+    }
+    
+    @IBAction func scheduleReminder() {
+        
     }
     
 }
