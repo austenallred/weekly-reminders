@@ -9,14 +9,28 @@
 import UIKit
 
 class ReminderViewController: UIViewController {
-
-    @IBOutlet var goalRemindLabel: UILabel!
+    var roleOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.capitalizedString
+    var roleTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.capitalizedString
+    var roleThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.capitalizedString
+    var roleFour = NSUserDefaults.standardUserDefaults().objectForKey("roleFour")!.capitalizedString
+    
+    var goalOne = "a"
+    var goalTwo = "b"
+    var goalThree = "c"
+    var goalFour = "d"
+    
+   
+    
+    @IBOutlet var labelOne: UILabel!
+    @IBOutlet var labelTwo: UILabel!
+    @IBOutlet var labelThree: UILabel!
+    @IBOutlet var labelFour: UILabel!
+    
     override func viewDidLoad() {
-        
+        labelOne.text = "\(roleOne): The goal"
+        labelTwo.text = "\(roleTwo): The goal"
+        labelThree.text = "\(roleThree): The goal"
+        labelFour.text = "\(roleFour): The goal"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 }

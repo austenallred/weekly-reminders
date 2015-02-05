@@ -61,8 +61,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-ND-cNI">
-                                <rect key="frame" x="272" y="369" width="58" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-ND-cNI">
+                                <rect key="frame" x="271" y="369" width="58" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="2034" y="315"/>
         </scene>
-        <!--Reminder-->
+        <!--Summary-->
         <scene sceneID="nhF-Pb-Jpi">
             <objects>
-                <viewController title="Reminder" id="weJ-gq-vku" customClass="ReminderViewController" customModule="Weekly_Reminders" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Summary" id="weJ-gq-vku" customClass="ReminderViewController" customModule="Weekly_Reminders" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S5X-c0-CtB"/>
                         <viewControllerLayoutGuide type="bottom" id="Qaz-DS-ap2"/>
@@ -261,8 +261,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to be reminded of these goals?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK2-mX-ocU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your goals for this week" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK2-mX-ocU">
                                 <rect key="frame" x="16" y="72" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role 1: Task 1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dm-rP-cPd">
+                                <rect key="frame" x="16" y="101" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role 1: Task 1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guc-Ng-WvE">
+                                <rect key="frame" x="16" y="130" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role 1: Task 1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvs-pL-l60">
+                                <rect key="frame" x="16" y="159" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role 1: Task 1" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8O-rl-o5Z">
+                                <rect key="frame" x="16" y="188" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -270,14 +294,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kvs-pL-l60" firstAttribute="top" secondItem="guc-Ng-WvE" secondAttribute="bottom" constant="8" id="2HX-nL-rCp"/>
+                            <constraint firstItem="1Dm-rP-cPd" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="Ify-O9-BdF"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="PeH-tZ-Jbd"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="big-im-9v8"/>
+                            <constraint firstItem="M8O-rl-o5Z" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="dOb-wz-oCK"/>
+                            <constraint firstItem="M8O-rl-o5Z" firstAttribute="top" secondItem="kvs-pL-l60" secondAttribute="bottom" constant="8" id="eGW-zm-QZ5"/>
                             <constraint firstAttribute="centerX" secondItem="rK2-mX-ocU" secondAttribute="centerX" id="eTD-hw-ha7"/>
+                            <constraint firstItem="kvs-pL-l60" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="gKT-NA-AtQ"/>
+                            <constraint firstItem="guc-Ng-WvE" firstAttribute="leading" secondItem="2LW-3n-KUs" secondAttribute="leadingMargin" id="leF-zl-5jp"/>
+                            <constraint firstItem="kvs-pL-l60" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="mHd-85-bbf"/>
+                            <constraint firstItem="M8O-rl-o5Z" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="sfa-lH-yNf"/>
+                            <constraint firstItem="guc-Ng-WvE" firstAttribute="top" secondItem="1Dm-rP-cPd" secondAttribute="bottom" constant="8" id="sjf-Uj-bj7"/>
+                            <constraint firstItem="1Dm-rP-cPd" firstAttribute="top" secondItem="rK2-mX-ocU" secondAttribute="bottom" constant="8" id="skE-KK-fwE"/>
                             <constraint firstItem="rK2-mX-ocU" firstAttribute="top" secondItem="S5X-c0-CtB" secondAttribute="bottom" constant="8" id="tfA-KL-vYK"/>
+                            <constraint firstItem="guc-Ng-WvE" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uUD-RE-LLK"/>
+                            <constraint firstItem="1Dm-rP-cPd" firstAttribute="trailing" secondItem="2LW-3n-KUs" secondAttribute="trailingMargin" id="uk2-oj-Uyf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="goalRemindLabel" destination="rK2-mX-ocU" id="2iA-YC-vHX"/>
+                        <outlet property="labelFour" destination="M8O-rl-o5Z" id="Sxf-uP-EI4"/>
+                        <outlet property="labelOne" destination="1Dm-rP-cPd" id="Ny3-Sa-0x0"/>
+                        <outlet property="labelThree" destination="kvs-pL-l60" id="ZYd-bR-QGh"/>
+                        <outlet property="labelTwo" destination="guc-Ng-WvE" id="JN6-PS-u1U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyA-px-jm2" userLabel="First Responder" sceneMemberID="firstResponder"/>

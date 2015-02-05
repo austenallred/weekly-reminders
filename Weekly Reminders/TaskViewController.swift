@@ -20,15 +20,17 @@ class TaskViewController: UIViewController {
     @IBOutlet var taskThreeField: UITextField!
     @IBOutlet var taskFourField: UITextField!
     
-    override func viewDidLoad() {
-    var taskOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.lowercaseString
-    var taskTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.lowercaseString
-    var taskThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.lowercaseString
-    var taskFour = NSUserDefaults.standardUserDefaults().objectForKey("roleFour")!.lowercaseString
+    var roleOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.lowercaseString
+    var roleTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.lowercaseString
+    var roleThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.lowercaseString
+    var roleFour = NSUserDefaults.standardUserDefaults().objectForKey("roleFour")!.lowercaseString
     
-    taskOneLabel.text = "What can you do to be a better \(taskOne) this week?"
-    taskTwoLabel.text = "What can you do to be a better \(taskTwo) this week?"
-    taskThreeLabel.text = "What can you do to be a better \(taskThree) this week?"
-    taskFourLabel.text = "What can you do to be a better \(taskFour) this week?"
+    override func viewDidLoad() {
+    taskOneLabel.text = "What can you do to be a better \(roleOne) this week?"
+    taskTwoLabel.text = "What can you do to be a better \(roleTwo) this week?"
+    taskThreeLabel.text = "What can you do to be a better \(roleThree) this week?"
+    taskFourLabel.text = "What can you do to be a better \(roleFour) this week?"
+        
+        
     }
 }
