@@ -39,4 +39,17 @@ class ReminderViewController: UIViewController {
         
     }
     
+    @IBAction func reminderDateChange(sender: UIDatePicker) {
+    }
+    
+    
+    @IBAction func sendReminder(sender: AnyObject) {
+        var localNotification = UILocalNotification()
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+        localNotification.alertBody = "How did you do this week? Check out your goals!"
+        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+    }
 }
