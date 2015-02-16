@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoleViewController: UITableViewController, UITextFieldDelegate {
+class RoleTableViewController: UITableViewController, UITextFieldDelegate {
  
     @IBOutlet var roleOneField: UITextField!
     @IBOutlet var roleTwoField: UITextField!

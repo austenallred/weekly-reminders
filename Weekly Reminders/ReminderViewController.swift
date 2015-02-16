@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReminderViewController: UIViewController {
+class ReminderViewController: UITableViewController {
     var roleOne = NSUserDefaults.standardUserDefaults().objectForKey("roleOne")!.capitalizedString
     var roleTwo = NSUserDefaults.standardUserDefaults().objectForKey("roleTwo")!.capitalizedString
     var roleThree = NSUserDefaults.standardUserDefaults().objectForKey("roleThree")!.capitalizedString
